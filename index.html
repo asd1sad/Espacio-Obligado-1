@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--! link css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--! link materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--! link toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--! link fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--! links bootsrap css -->
+    <!--!  Index-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--!  Catalogo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--!  Coleccion -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--!  Contacto-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--! Email script -->
+    <script src="./js/enviaMailContacto.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("80JXlsJDa38UNNoRd");
+        })();
+    </script>
+
+    <title>Espacio Obligado</title>
+    <link rel="icon" type="image/x-icon" href="fotos/negro.jpg">
+</head>
+
+<body>
+
+    <div id="menuIntro">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-12  d-flex">
+                        <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                            <h2 id="catalogo" class="navegacion catalogo">CATALOGO</h2>
+                        </div>
+                        <div class="navegacionHtml col-sm-6-md-4-lg-4 d-flex justify-content-center text-center">
+                            <h2 class="navegacion coleccion">COLECCION 2022</h2>
+                        </div>
+                        <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                            <h2 class="navegacion contacto">CONTACTO</h2>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="position-absolute top-50 start-50 translate-middle">
+
+                    <h1 class="col-12 text-center" style="font-size:9vw">
+                        Espacio Obligado
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--! Catalogo html -->
+    <div id="menuCatalogo">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-12  d-flex">
+                    <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 id="linkUsado1" class="navegacion" style="opacity:0.6;">CATALOGO</h2>
+                    </div>
+                    <div class="navegacionHtml col-sm-6-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 id="coleccion2" class="navegacion coleccion">COLECCION 2022</h2>
+                    </div>
+                    <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 id="contacto2" class="navegacion contacto">CONTACTO</h2>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--! Carousel -->
+        <div id="carousel" class="row  d-flex justify-content-center">
+            <div id="carouselExampleCaptions" class="col-4 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="fotos/color.jpg" class="d-block w-100 imagenesCarousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>JADEN LONDON</h5>
+                            <p>TODXS TENEMOS NUESTRO PERMITIDO</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fotos/7.jpg" class="d-block w-100 imagenesCarousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <p>SIEMPRE</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fotos/6.jpg" class="d-block w-100 imagenesCarousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>AMOR</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fotos/5.jpg" class="d-block w-100 imagenesCarousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--! Footer Catalogo-->
+        <footer class="footerCatalogo">
+            <div class="text-center"> <img src="fotos/logoprueba.png" width=30%> </div>
+        </footer>
+    </div>
+    <!--! Fin Catalogo html  -->
+
+
+    <!--! Coleccion 2022 html -->
+    <div id="menuColeccion">
+
+        <div class="imagenCarrito">
+            <button id="boton-carrito"><img class="cartIcon" src="fotos/cart.svg"><i class="shopping-cart"></i><span
+                    id="contadorCarrito">0</span></button>
+        </div>
+        <div class="container-fluid">
+
+            <nav class="col-12  d-flex">
+                <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                    <h2 class="navegacion catalogo" id="catalogo2">CATALOGO</h2>
+                </div>
+                <div class="navegacionHtml col-sm-6-md-4-lg-4 d-flex justify-content-center text-center">
+                    <h2 class="navegacion coleccion"
+                        style="opacity:0.6;cursor: url(fotos/iconmonstr-favorite-8-32.png), auto;">
+                        COLECCION 2022</h2>
+                </div>
+                <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                    <h2 id="contacto3" class="navegacion contacto">CONTACTO</h2>
+                </div>
+            </nav>
+
+        </div>
+        </header>
+
+        <!-- ! Sort By -->
+        <section class="sort_wrap sortBy">
+            <div class="sort_box">
+                <label for="sort-by" class="sort_by">ORDERNAR POR:</label>
+                <select id="sort-by">
+                    <option value="todo">Todo</option>
+                    <option value="pantalon">Pantalones</option>
+                    <option value="remera">Remeras/Camisas</option>
+                    <option value="extras">Extras</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="contenedor-productos">
+                    <div class="d-flex justify-content-center mt-5" id="contenedor-productos1">
+                        <!-- !mostrar productos () -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Fin Coleccion 2022 html -->
+
+    <!--! Carrito -->
+
+    <div id="carritoClase">
+
+        <button id="carritoCerrar"><i class="large material-icons">close</i></button>
+        <a href="index.html" class="text-decoration-none">
+            <h1 style="text-align: left;margin-left: 7px; position: fixed;top: 8px;" id="espacioObligadoCarrito">Espacio
+                Obligado</h1>
+        </a>
+
+        <div id="carrito-contenedor">
+
+        </div>
+        <div class="detallesFinales">
+            <p class="precioProducto"><strong>TOTAL: $</strong><span id="precioTotal"><strong>0</strong></span></p>
+            <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
+            <button id="boton-continuar" class="boton btn btn-secondary">Continuar</button>
+        </div>
+    </div>
+    <!--! Fin Carrito-->
+
+    <!--! Pag Compra -->
+
+    <div id="pagCompra">
+        <div class="navCompra">
+            <a href="index.html" class="text-decoration-none">
+                <h1 style="text-align: left;">Espacio Obligado</h1>
+            </a>
+            <button id="pagCompraCerrar"><i class="large material-icons">close</i></button>
+
+        </div>
+  
+
+        <section class="pagos">
+            <li id="transferenciaBancaria">TRANSFERENCIA BANCARIA</li>
+            <li id="tarjetaBancaria">TARJETA</li>
+        </section>
+        <div class="detallesFinalesPago">
+            <span class="precioProductoCompra"><strong>TOTAL: $</strong><span
+                    id="precioTotalCompraa"><strong></strong></span></span>
+            <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
+        </div>
+    </div>
+
+    <!-- Transferencia o Credito -->
+ 
+        <ul id="transferenciaPago">
+            <li>ALIAS: <strong>Espacio.Obligado.2022</strong></li>
+            <li>CBU: <i>28505909 40090418135201</i></li>
+            <li><del>Numero de orden</del></li>
+        </ul>
+
+        <ul id="tarjetaPago">
+            <li>Mercado <strong>Pago</strong></li>
+            <li>En <i>Proceso</i></li>
+            <li><del>No logrado</del></li>
+            <button id="botonComprar" class="boton btn btn-secondary">Comprar</button>
+        </ul>
+      
+
+
+
+<!-- ° Fin pagos -->
+    <!-- ! -->
+    <!--! Contacto html -->
+    <div id="menuContacto">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-12  d-flex">
+                    <div class="navegacionHtml col-sm-3-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 id="catalogo4" class="navegacion catalogo">CATALOGO</h2>
+                    </div>
+                    <div class="navegacionHtml col-sm-6-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 id="coleccion3" class="navegacion coleccion">COLECCION 2022</h2>
+                    </div>
+                    <div class="navegacionHtml col-sm-6-md-4-lg-4 d-flex justify-content-center text-center">
+                        <h2 class="navegacion contacto" style="opacity:0.6;">CONTACTO</h2>
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-12 text-center mt-5 mb-5">
+                    Espacio Obligado es la representacion del ropero que uso desde hace mas de 3 años. Ropa color
+                    negro.
+                </p>
+            </div>
+        </div>
+
+        <!--! Formulario  -->
+        <div class="container-fluid">
+            <div class="row">
+                <form id="contact-form" action="" method="post" class="col-12 text-center mt-4">
+                    <input type="hidden" value="" name="product">
+                    <input type="hidden" name="type" value="contact">
+                    <div class="form-group">
+                        <input type="text" id="fullName" class="col-6" autocorrect="off" autocapitalize="off"
+                            name="name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="" id="email_id" class="col-6 mt-3" autocorrect="off" autocapitalize="off"
+                            name="email" placeholder="Email">
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="tel" id="contact_number" class="col-6 mt-3" autocorrect="off" autocapitalize="off"
+                            name="contact_number" placeholder="Teléfono">
+                    </div> -->
+                    <div class="form-group">
+                        <textarea id="message" class="col-6 mt-3" autocorrect="off" autocapitalize="off" name="message"
+                            rows="7" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <input class="cursorMail boton btn btn-secondary col-2 mt-3 mx-auto" id="enviarFormulario"
+                        style="cursor:url(fotos/mail.svg), auto; text-decoration:none;" }type="submit" value="Enviar"
+                        name="contact" onclick="sendMail()">
+
+                    <!-- <button class="cursorMail boton btn btn-secondary col-2 mt-3 mx-auto" id="enviarFormulario"
+                    style="cursor:url(fotos/mail.svg), auto;" type="submit" value="Enviar" name="contact"
+                    onclick="sendMail()">Enviar</button> -->
+
+                </form>
+            </div>
+        </div>
+
+        <!--! Footer Contacto-->
+        <footer class="row col-12 text-center">
+            <div class="tiktok col-6 text-center">
+
+                <a href="https://www.tiktok.com/@hoynegro" style="text-decoration: none;" target="blank">
+                    <p class="btn">
+                        TIKTOK
+                    </p>
+                </a>
+
+                <!-- <a href="https://www.tiktok.com/@hoynegro" style="text-decoration: none;" target="blank">
+
+                    <p id="tiktok">
+                        TIKTOK
+                    </p>
+                </a> -->
+            </div>
+            <div class="instagram col-6">
+                <a href="https://www.instagram.com/espacioobligado/?hl=es-la" style="text-decoration: none;"
+                    target="blank" class="col-6 text-center">
+                    <p class="btn">
+                        INSTAGRAM
+                    </p>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!-- ! Fin Contacto html-->
+    <!--! link JS  -->
+    <script src="js/stock.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/index.js"></script>
+
+    <!--! link JS Bootstrap Index -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--! link JS Toastify  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!--! link JS Bootstrap Catalogo-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--! link JS Bootstrap coleccion 2022-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--! link Js bootstrap coleccion 2022-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--! link JS Bootstrap contacto-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--! link bootstrap contacto-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
